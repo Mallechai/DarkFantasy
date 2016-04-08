@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class TempMain {
 	public static void main(String[] args){
 		
-		Create_NPC p = new PatheticDemonologist("Alfred", 40, 30, 200, true);
-		Create_NPC q = new PatheticDemonologist("Jim", 40, 30, 200, true);
+		NPC p = new PatheticDemonologist("Alfred", 40, 30, 200, true);
+		NPC q = new PatheticDemonologist("Jim", 40, 30, 200, true);
 		
 		System.out.println("" + p.name);
 		System.out.println("" + q.name);

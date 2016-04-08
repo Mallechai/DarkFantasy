@@ -1,13 +1,13 @@
 package darkfantasy;
 
-public class Create_NPC {
+public class NPC {
 	public String name;
 	public int maxHP;
 	public int currentHP;
 	public int damage;
 	public boolean inCombat = false;
 	
-	public Create_NPC(String NPC_name, int maxHealth, int currentHealth, int damageDealing, boolean Combat){
+	public NPC(String NPC_name, int maxHealth, int currentHealth, int damageDealing, boolean Combat){
 		name = NPC_name;
 		maxHP = maxHealth;
 		currentHP = currentHealth;
@@ -15,7 +15,7 @@ public class Create_NPC {
 		inCombat = Combat;
 	}
 	
-	public Create_NPC(){
+	public NPC(){
 		this(null, 0, 0, 0, false);
 	}
 	
