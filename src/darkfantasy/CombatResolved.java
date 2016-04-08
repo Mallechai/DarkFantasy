@@ -9,11 +9,8 @@ public class CombatResolved{
 	
 	public static void CombatResolution(Player Player, NPC Enemy1, NPC Enemy2, NPC Enemy3){
 		
-		int playerHP = 100;
-		int e1HP = Enemy1.getHealth();
-		int e2HP = Enemy2.getHealth();
-		int e3HP = Enemy3.getHealth();
-		int totalEnemyHP = e1HP+e2HP+e3HP;
+		int playerHP = Player.getHealth();
+		int totalEnemyHP = Enemy1.getHealth()+Enemy2.getHealth()+Enemy3.getHealth();
 		int playerDMG = Player.getDmg();
 		
 		while (playerHP > 0 && totalEnemyHP > 0){
@@ -25,14 +22,17 @@ public class CombatResolved{
 			}
 			totalEnemyHP -= playerDMG;
 			if(totalEnemyHP > 0)
+				theirTurn();
 				System.out.println("The enemies look warry, their current hp is:" + totalEnemyHP);
 		}
 		System.out.println("You win");
 	}
 		
-		
+	private static void theirTurn(){
+		System.out.println("They do some damage... I Guess");
+	}
 	
-	private int dealDamage(){
+	private int dealDamage(Object Attacker, Object Defender){
 		int newHealth = 25;
 		
 		if (newHealth < 0){

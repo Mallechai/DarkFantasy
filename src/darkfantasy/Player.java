@@ -33,7 +33,7 @@ public class Player {
 		return this.name;
 	}
 	
-	public int getMaxHP(){
-		return maxHP;
+	public int getHealth(){
+		return currentHP;
 	}
 }
