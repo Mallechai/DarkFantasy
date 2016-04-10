@@ -10,6 +10,7 @@ public class TempMain {
 		NPC r = new PatheticDemonologist("Flamey", "Elemental", 40, 30, 10, true);
 		NPC s = new PatheticDemonologist("Alfred", "Cult leader", 40, 30, 8, true);
 		
+		System.out.println(""+q.fireRes +" " + q.holyRes);
 		CombatResolved.CombatResolution(p,q,r,s);
 
 

@@ -32,6 +32,20 @@ public class CombatResolved{
 		System.out.println("They do some damage... I Guess");
 	}
 	
+	private double calcDMGMod(String[] atktypes, NPC Defender){
+		double atkMod = 1.0;
+		
+		for (int i = 0 ; i < atktypes.length; i++){
+			switch (atktypes[i].toLowerCase()){
+				case "fire": atkMod *= Defender.fireRes; break;
+				case "ice": atkMod *= Defender.iceRes; break;
+			}
+		}
+		
+		
+		return atkMod;
+	}
+	
 	private int dealDamage(Object Attacker, Object Defender){
 		int newHealth = 25;
 		

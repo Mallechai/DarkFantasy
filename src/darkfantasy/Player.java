@@ -1,6 +1,6 @@
 package darkfantasy;
 
-public class Player {
+public class Player extends Character{
 	public String name;
 	public int maxHP;
 	public int currentHP;
