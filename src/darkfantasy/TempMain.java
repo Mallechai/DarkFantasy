@@ -24,7 +24,7 @@ public class TempMain {
 		int dmg = input.nextInt();
 		totalEnemyHP -= dmg;
 		if(totalEnemyHP > 0)
-		System.out.println("The enemies look warry, their hp is:" + totalEnemyHP);
+		System.out.println("The enemies look wary, their hp is:" + totalEnemyHP);
 
 		}
 		System.out.println("You win");
