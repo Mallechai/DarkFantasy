@@ -2,6 +2,7 @@ package darkfantasy;
 
 public class Character {
 	
+
 	//Offensive stats
 	public int damage;
 	public String[] dmgType;
