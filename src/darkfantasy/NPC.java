@@ -10,10 +10,7 @@ public class NPC extends Character {
 
 	public boolean inCombat = false;
 	
-	//Offensive stats
-	public int damage;
-	public String[] dmgType;
-	public String attackDescription;
+
 	
 	
 	//Defensive stats

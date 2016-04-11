@@ -2,6 +2,11 @@ package darkfantasy;
 
 public class Character {
 	
+	//Offensive stats
+	public int damage;
+	public String[] dmgType;
+	public String attackDescription;
+	
 	//Defensive stats
 	public int maxHP;
 	public int currentHP;

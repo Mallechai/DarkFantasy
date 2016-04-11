@@ -32,7 +32,7 @@ public class CombatResolved{
 		System.out.println("They do some damage... I Guess");
 	}
 	
-	private double calcDMGMod(String[] atktypes, NPC Defender){
+	private double calcDMGMod(String[] atktypes, Character Defender){
 		double atkMod = 1.0;
 		
 		for (int i = 0 ; i < atktypes.length; i++){
@@ -65,14 +65,16 @@ public class CombatResolved{
 		return newHealth;
 	}
 
-	private int npcDealDamage(NPC Attacker, Character Defender){
-		int newHealth = 25;
-		
-		newHealth = Attacker.damage;
+	private double npcDealDamage(NPC Attacker, Character Defender){
+		double newHealth = 25;
+		double dmgMod = calcDMGMod(Attacker.dmgType, Defender);
+		newHealth = Attacker.damage * dmgMod;
 		
 		if (newHealth < 0){
 			newHealth = 0;
 		}
+		
+		//round this down
 		return newHealth;
 	}
 	
