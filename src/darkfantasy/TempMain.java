@@ -34,7 +34,6 @@ public class TempMain {
 =======
 package darkfantasy;
 
-import java.util.Scanner;
 import darkfantasy.CombatResolved;
 
 public class TempMain {

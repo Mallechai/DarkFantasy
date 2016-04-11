@@ -9,6 +9,7 @@ public class Player extends Character{
 	//private static boolean playerpresent = false;
 	
 	public Player(String PC_name, int maxHealth, int currentHealth, int damageDealing, boolean Combat){
+		super(maxHealth, currentHealth);
 		name = PC_name;
 		maxHP = maxHealth;
 		currentHP = currentHealth;
@@ -21,14 +22,10 @@ public class Player extends Character{
 	}
 
 	
-	public Player(String name){
+	public void setPlayerName(String name){
 		this.name = name;
 	}
 
-	/*public void setName(String name) {
-		this.name = name;
-	}*/
-	
 	public String getName(){
 		return this.name;
 	}
