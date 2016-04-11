@@ -37,28 +37,43 @@ public class CombatResolved{
 		
 		for (int i = 0 ; i < atktypes.length; i++){
 			switch (atktypes[i].toLowerCase()){
+				case "piercing": atkMod *= Defender.piercingRes; break;
+				case "bashing": atkMod *= Defender.bashingRes; break;
+				case "slashing": atkMod*= Defender.slashingRes; break;
+				case "blast": atkMod *= Defender.blastRes; break;
 				case "fire": atkMod *= Defender.fireRes; break;
+				case "electricity": atkMod *= Defender.elecRes; break;
 				case "ice": atkMod *= Defender.iceRes; break;
+				case "earth": atkMod *= Defender.earthRes; break;
+				case "dark": atkMod *= Defender.darkRes; break;
+				case "holy": atkMod *= Defender.holyRes; break;
+				case "nature": atkMod *= Defender.natureRes; break;
+				case "spirit": atkMod *= Defender.spiritRes; break;
 			}
-		}
-		
-		
+		}		
 		return atkMod;
 	}
 	
-	private int dealDamage(Object Attacker, Object Defender){
+	private int playerdealDamage(Player Attacker, NPC Defender){
 		int newHealth = 25;
+		
+
 		
 		if (newHealth < 0){
 			newHealth = 0;
 		}
 		return newHealth;
 	}
-	
-	
-	private double elementalMod(){
-		double damagemultiplier = 2.5;
-		return damagemultiplier;
+
+	private int npcDealDamage(NPC Attacker, Character Defender){
+		int newHealth = 25;
+		
+		newHealth = Attacker.damage;
+		
+		if (newHealth < 0){
+			newHealth = 0;
+		}
+		return newHealth;
 	}
 	
 }
