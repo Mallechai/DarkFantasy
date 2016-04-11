@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package darkfantasy;
 
 import java.util.Scanner;
@@ -143,4 +142,3 @@ public class CombatResolved{
 	}
 	
 }
->>>>>>> 91183bae4ba1e1b3d509626bec369c7d35ce5112

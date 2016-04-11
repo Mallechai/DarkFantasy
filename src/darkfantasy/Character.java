@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-package darkfantasy;
-
-public class Character {
-	int testcharacter;
-}
-=======
 package darkfantasy;
 
 public class Character {
@@ -35,4 +28,4 @@ public class Character {
 		return currentHP;
 	}
 }
->>>>>>> 91183bae4ba1e1b3d509626bec369c7d35ce5112
+
